@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kakao 지도 시작하기</title>
+</head>
+<body>
+  <div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.58906517596263, 127.13749064645373),
+			level: 3
+		};
+		var map = new kakao.maps.Map(container, options);
+	</script>
+  <ul><li>이름: 이준석</li></ul>
+  <ul><li>학과: 컴퓨터공학과</li></ul>
+  <ul><li>나이: 27</li></ul>
+  <ul><li>취미: 축구 보기, 음악 감상</li></ul>
+  <ul><li>좋아하는 활동<ol>1. 멋사 활동하기</ol><ol>2. 음상 감상</ol><ol>3. 노래</ol></li></ul>
+  <ul><li>오늘 하면서 느낀점: 재미있다. 복습을 잘 해야겠다.</li></ul>
+</body>
+</html>
+접
